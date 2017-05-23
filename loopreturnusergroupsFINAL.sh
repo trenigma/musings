@@ -1,4 +1,5 @@
 #!/bin/bash
+
 ##pulls group membership for AWS IAM users. usernames are read in from a text file
 while IFS='' read -r line || [[ -n "$line" ]]; do
     echo -n "$line "
@@ -9,4 +10,3 @@ done < "usersforloop.txt"
 printf '\n'
 echo "these are all the groups for each user =)"
 printf '\n'
-#done
