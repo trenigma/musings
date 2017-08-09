@@ -1,3 +1,4 @@
+## grab aws region list and return selected info about ec2 instances in all regions
 for region in `aws ec2 describe-regions --output text | cut -f3`
 do
      echo -e "\nListing Instances in region:'$region'..."
