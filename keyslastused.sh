@@ -1,6 +1,8 @@
 #!/bin/bash
 
 ##pulls 'LastTimeUsed' for AWS IAM users' access keys
+##requires local file with keys, one per line
+
 while IFS='' read -r line || [[ -n "$line" ]]; do
     echo -n "$line "
     aws iam get-access-key-last-used --access-key $line --output text | cut -f 2 >> keylast.csv
