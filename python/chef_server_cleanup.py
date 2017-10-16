@@ -1,3 +1,7 @@
+#cycle through all AWS regions and grab ids of running instances and 
+#compare against current list of chef server nodes. If a node no longer
+#needs to be in the chef server list, remove it
+
 ## NOTE: monitor.pem is located in a databag
 import boto3
 import os
