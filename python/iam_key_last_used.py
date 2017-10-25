@@ -14,7 +14,6 @@ for user in resource.users.all():
 	for key in user.access_keys.all():
 		#do stuff with the key
             response = iam.get_access_key_last_used(AccessKeyId=key.access_key_id)
-            #print(response)
             result = 'no last used date'
             if 'LastUsedDate' in response['AccessKeyLastUsed']:
                 result = response['AccessKeyLastUsed']['LastUsedDate']
