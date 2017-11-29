@@ -1,3 +1,5 @@
+// pretty basic for-loop to show how money would grow
+// if left alone to double each day for 30 days.
 
 console.log(`\n`);
 var day_number = "day number";
