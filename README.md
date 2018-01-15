@@ -1,2 +1,2 @@
 # musings
-bits and pieces from the learning journey
+Bits and pieces from the devops and cloud computing learning journey! =)
