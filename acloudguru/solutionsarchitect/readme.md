@@ -1,1 +1,1 @@
-resources and stuff for Udemy AWS Certified Solutions Architech - Associate course
+A Cloud Guru AWS Certified Solutions Architect - Associate course stuff
