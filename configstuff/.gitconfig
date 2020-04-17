@@ -1,0 +1,40 @@
+[alias]
+
+    l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+
+    s = status -s
+    
+    a = add
+    ap = add -p
+    c = commit --verbose
+    ca = commit -a --verbose
+    cm = commit -m
+    cam = commit -a -m
+    m = commit --amend --verbose
+
+    un = restore -S
+
+    d = diff
+    ds = diff --stat
+    dc = diff --cached
+
+    f = "!git ls-files | grep -i"
+
+    sl = stash list
+    sa = stash apply
+
+    co = checkout
+    cob = checkout -b
+
+    cp = cherry-pick
+
+    rem = "!git config -l | grep remote.*url | tail -n +2"
+
+    # list branches sorted by last modified
+    b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+
+    # list aliases
+    la = "!git config -l | grep alias | cut -c 7-" 
+
+
